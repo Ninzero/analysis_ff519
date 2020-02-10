@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+
+\usepackage[thinc]{esdiff} % for typesettign derivatives
+\usepackage{amsthm} % provides an enhanced version of LaTex's \newtheorem command
+\usepackage{mdframed} % framed environments that can split at page boundaries
+\usepackage{enumitem} % bulletin points or other means of listing things
+\usepackage{amssymb} % for AMS symbols
+\usepackage{amsmath} % so as to use align
+\usepackage{mathrsfs} % for the stylistic L
+\usepackage{authblk} % for writing affiliationis
+\usepackage{graphicx} % for importing images
+\graphicspath{{./images/}} % for the path to images
+\usepackage{soul}
+
+
+
+\theoremstyle{definition}
+\mdfdefinestyle{defEnv}{
+    hidealllines = false,
+    nobreak = true,
+    innertopmagrin = -1ex,
+}
+
+\theoremstyle{plain}
+\theoremstyle{remark}
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{note}{Note}[section]
+\newtheorem{thm}{Theorem}
+\newtheorem{example}{Example}[section]
+
+\pagestyle{headings}
+\author{Feifan Fan}
+\title{
+    Analysis CheatSheet 
+}
+\affil{Contents are from Dr Marie-Amelie Lawn}
+\affil{This is a journey of surviving in the 1st year JMC}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Recap}
+A quick recap of what we have done in the previous course, Analysis for JMC
+\section{Sequences}
+
+
+\begin{rmk}
+    \emph{!} We are interested in the behaviour of the sequence ${a_n}$ 
+    \emph{when n is large(or say $n \rightarrow \infty$)}
+\end{rmk}
+
+
+\end{document}
+ 
